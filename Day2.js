@@ -15,7 +15,7 @@ console.log(3*5);
 console.log(12/3);
 
 //Task 5
-console.log(10%4);
+console.log("rem : " , 10%4);
 
 //Activity 2 : Assingement Operators
 //Task 6
