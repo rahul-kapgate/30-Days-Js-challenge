@@ -51,6 +51,10 @@ const library = {
       year: 1925,
     },
   ],
+
+  string1 : function(){
+    console.log(`${this.books[0].title} book  is writen in Year ${this.books[0].year}`)
+  }
 };
 
 console.log(library);
@@ -60,7 +64,7 @@ console.log(library);
 
 //Task 6
 // Log the name of the library
-console.log("Library Name:", library.name);
+console.log("Library Name:", library.lib_name);
 
 // Log the titles of all the books in the library
 console.log("Book Titles:");
@@ -68,6 +72,23 @@ library.books.forEach(book => {
     console.log(book.title);
 });
 
+console.log("------------------------------")
+
+//Acitivity 4
+//Task 7
+
+ library.string1();
 
 
+ // Acitivity 5
+ //Task 8
+ for( pro in book){
+  console.log(`${pro} : ${book[pro]}`)
+ }
+
+console.log("-----------------------------")
+ //Task 9
+ console.log(Object.keys(book));
+
+ console.log(Object.values(book));
 
