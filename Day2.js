@@ -26,7 +26,7 @@ console.log(Num1);
 //Task 7
 Num2 = 10;
 Num2 -= 2;
-console.log(Num2);
+console.log(Num2);  // num2 = 10 - 2
 
 //Activity 3 : Comparison operators 
 //task 8
