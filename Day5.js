@@ -64,6 +64,38 @@ greeting("Shivam");
 
 //Activity 5 : higher order functions
 //Task 9
+function repeteFun(func, time){
+    for(let i=1; i<=time; i++){
+        func();
+    }
+}
+
+function greeting(){
+    console.log("hello");
+}
+
+repeteFun(greeting, 5);
+
+
+// Task 10
+
+function composeFunctions(func1, func2, value) {
+  return func2(func1(value));
+}
+
+// Example usage:
+function addTwo(num) {
+  return num + 2;
+}
+
+function multiplyByThree(num) {
+  return num * 3;
+}
+
+const result = composeFunctions(addTwo, multiplyByThree, 5);
+console.log(result); // Output: 21
+// Explanation: addTwo(5) -> 7, multiplyByThree(7) -> 21
+
 
 
 

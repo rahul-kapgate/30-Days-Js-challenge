@@ -46,7 +46,7 @@ console.log(newArr2);
 let sum = arr1.reduce(
     (pre,cur) =>{
         return pre + cur;
-    } 
+    } , 0 
 )
 
 console.log(sum);
